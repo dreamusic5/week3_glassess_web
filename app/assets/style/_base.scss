@@ -90,3 +90,29 @@ a{
 .font-bold{
 	font-weight: bold;
 }
+//全域設定
+body{
+    font-family: 'Noto Sans TC', sans-serif, italic;
+    margin: 0 auto;
+}
+//container
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+@include pad {
+    .container{
+        max-width: 720px;
+    }
+}
+@include mobile {
+    .container{
+        max-width: 374.5px;
+    }
+}
+
+a{
+	color: #000;
+}
+

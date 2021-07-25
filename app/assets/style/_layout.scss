@@ -1,0 +1,195 @@
+//表頭
+.header{
+    background-color: $mainColorLight;
+    padding: 30px 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        color: #fff;;
+    }
+    .logo a{
+        width: 80px;
+        height: auto;
+    }
+    .menu{
+        display: flex;
+        li{
+            padding-left: 64px;
+            a{
+                border-bottom: 1px solid transparent;
+                &:hover{
+                    border-bottom: 1px solid #fff;
+                }
+            }
+            
+        }
+    }
+}
+
+//表尾
+.footer{
+    padding: 32px 0;
+    background: $mainColorLight;
+    a,p{
+        color: #FFF;
+    }
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+}
+.footer-menu{
+    display: flex;
+    a{
+        border-bottom: 1px solid transparent;
+        &:hover{
+            border-bottom: 1px solid #fff;
+        }
+    }
+}
+.footer-contact{
+    li a{
+        display: flex;
+        border-bottom: 1px solid transparent;
+        &:hover{
+            border-bottom: 1px solid #fff;
+        }
+        img{
+            width: 36px;
+            height: auto;
+        }
+    }
+}
+.social-media{
+    display: flex;
+    img:hover{
+        transform:scale(1.2,1.2)
+    }
+}
+.footer-subcontent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+.provision{
+    display: flex;
+    a:hover{
+        border-bottom: 1px solid #fff;
+    }
+}
+
+@include pad {
+    .container{
+        max-width: 720px;
+    }
+    //表頭
+    .header{
+        padding: 30px 39px;
+        .menu{
+            li{
+                padding-left: 40px;
+            }
+        }
+    }
+    //表尾
+    .footer-contact{
+        p{
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        li{
+            margin-bottom: 20px;
+            a img{
+                width: 20px;
+                height: auto;
+            }   
+        }
+        .phoneNumber{
+            margin-bottom: 12px;
+        }
+    }
+    .social-media{
+        li{
+            margin-right: 0;
+            margin-left: 24px;
+        }
+        img{
+            width: 24px;
+        }
+    }
+    .footer-menu{
+        margin-right: 40px;
+        margin-bottom: 18px;
+    }
+}
+
+//手機版本
+@include mobile {
+    .container{
+        max-width: 374.5px;
+    }
+    //表頭
+    .header{
+        padding: 0;
+        flex-direction: column;
+        .logo a{
+            margin: 10px 0;
+            width: 48px;
+            height: auto;
+        }
+        .menu{
+            flex-wrap: wrap;
+            width: 100%;
+            li {
+                width: 50%;
+                padding: 0;
+                a{
+                    padding: 8px 0;
+                    border: 1px solid #fff;
+                    margin:0px -1px -1px 0px ;
+                    text-align: center;
+                    &:hover{
+                        background: palevioletred;
+                    }
+                }
+                
+            }
+        }
+    }
+    //表尾
+    .footer-menu{
+        display: none;
+    }
+    .footer-contact{
+        p{
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        li{
+            margin-bottom: 20px;
+            a img{
+                width: 16px;
+                height: auto;
+                margin-right: 8px;
+            }   
+        }
+        .phoneNumber{
+            margin-bottom: 12px;
+        }
+    }
+    .footer-subcontent{
+        flex-direction: column;
+        margin: 16px 0 0 0;
+    }
+    .copyright{
+        margin-bottom: 8px;
+    }
+    .provision{
+        flex-direction: column;
+        li{
+            margin-bottom: 8px;
+        }
+    }
+}

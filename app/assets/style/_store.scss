@@ -1,0 +1,275 @@
+// 標題、跨頁共用(包含平板、手機)
+.page_title{
+    padding: 4px 16px;
+    border-left: 8px solid #9F1213;
+    margin-bottom: 60px;
+    @include pad{
+        border-left: 4px solid #9F1213;
+        margin-bottom: 40px;
+    }
+    @include mobile{
+        font-size: 28px;
+        padding: 0 8px;
+        margin-bottom: 24px;
+    }
+}
+//store區塊(包含平板、手機)
+.store{
+    padding-top: 96px;
+    padding-bottom: 144px;
+    @include pad{
+        padding-top: 60px;
+        padding-bottom: 96px;
+    }
+    @include mobile{
+        padding-top: 28px;
+        padding-bottom: 56px;
+    }
+
+}
+
+//桌機
+//地區下拉選單
+.select_place{
+    display: flex;
+    margin-bottom: 36px;
+    align-items: center;
+    select{
+        padding: 8px 251px 8px 19px;
+        color: #495057;
+        font-size: 18px;
+        border: 1px solid #CED4DA;
+    }
+}
+// 店家資訊
+.store_item{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &::after{
+        height: 0;
+        width: 32%;
+        content: "";
+    }
+    li{
+        width: 32%;
+        .store_img{
+            width: 100%;
+            height: 224px;
+            object-fit: cover;
+        }
+        h2{
+            padding: 12px 24px;
+            border: 1px solid #00000020;
+        }
+        .store_content{
+            border: 1px solid #00000020;
+            margin-top: -1px;
+            padding: 16px 24px;
+            li{
+                width: 100%;
+                display: flex;
+                img{
+                    margin-right: 11px;
+                    width: 18px;
+                    height: auto;
+                }
+            }
+        }
+
+    }
+    .store_more_btn{
+        width: 100%;
+        background-color: #000;
+        a{
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            &:hover{
+                background-color:$mainColorLight;
+            }
+        }
+    }
+}
+// 分店頁面
+.branch_store_content{
+    display: flex;
+    justify-content: space-between;
+    .branch_store_item{
+        width: 40%;
+        .store_img{
+            width: 100%;
+            height: 224px;
+            object-fit: cover;
+        }
+        h2{
+            padding: 12px 24px;
+            border: 1px solid #00000020;
+        }
+        .store_content{
+            border: 1px solid #00000020;
+            margin-top: -1px;
+            padding: 16px 24px;
+            li{
+                display: flex;
+                img{
+                    margin-right: 11px;
+                    width: 18px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .branch_store_map{
+        width: 57%;
+    }
+}
+
+//平板
+@include pad{
+    // 地區下拉選單
+    .select_place{
+        margin-bottom: 24px;
+        p{
+            font-size: 16px;
+        }
+        select{
+            padding: 10px 173px 10px 16px;
+            font-size: 16px;    
+        }
+    }
+    // 店家資訊
+    .store_item{
+        &::after{
+            width: 48%;
+        }
+        li{
+            width: 48%;
+            margin-bottom: 20px;
+            .store_img{
+                height: 164px;
+            }
+            h2{
+                font-size: 16px;
+                padding: 8px 24px;
+            }
+            .store_content{
+                padding: 16px 24px 8px 24px;
+                li{
+                    margin-bottom: 8px;
+                    img{
+                        width: 15px;
+                    }
+                    h3{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .store_more_btn{
+            a{
+                padding: 16px 0;
+            }
+        }
+    }
+    // 分店頁面
+    .branch_store_content{
+        display: flex;
+        flex-direction: column;
+        .branch_store_item{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 32px;
+            .store_img{
+                width: 48%;
+                height: 164px;
+            }
+            .branch_store_item_information{
+                width: 48%;
+                h2{
+                    font-size: 16px;
+                    padding: 8px 16px;
+                }
+                .store_content{
+                    li{
+                        img{
+                            margin-right: 11px;
+                            width: 14px;
+                            height: auto;
+                        }
+                        h3{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .branch_store_map{
+            width: 100%;
+            height: 422px;
+        }
+    }
+}
+
+
+//手機
+@include mobile{
+    // 地區下拉選單
+    .select_place{
+        margin-bottom: 20px;
+        p{
+            font-size: 14px;
+            margin-right: 12px;
+            width:20%
+        }
+        select{
+            padding: 8px 0px 8px 16px;
+            font-size: 14px;   
+            width: 80%; 
+        }
+    }
+    // 店家資訊
+    .store_item{
+        &::after{
+            width: 100%;
+        }
+        li{
+            width: 100%;
+            margin-bottom: 16px;
+            .store_img{
+                height: 164px;
+            }
+            .store_content{
+                padding: 16px 24px 8px 24px;
+            }
+        }
+    }
+    // 分店頁面
+    .branch_store_content{
+        .branch_store_item{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 16px;
+            .store_img{
+                width: 100%;
+            }
+            .branch_store_item_information{
+                width: 100%;
+                .store_content{
+                    li{
+                        img{
+                            margin-right: 8px;
+                            width: 20x;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+        .branch_store_map{
+            height: 211px;
+        }
+    }
+}

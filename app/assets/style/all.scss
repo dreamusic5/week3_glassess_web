@@ -1,4 +1,16 @@
 @import "variable";
 @import "reset";
+@import "mixin";
 @import "base";
-@import "main";
+// 頁首頁尾
+@import "layout";
+// 首頁
+@import "index";
+// 產品頁
+@import "product";
+// 門市據點
+@import "store";
+// 常見問題
+@import "faq";
+// 部落格
+@import "blog";

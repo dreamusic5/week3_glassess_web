@@ -11,3 +11,20 @@
         @content
     };
 };
+
+//container
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+@include pad {
+    .container{
+        max-width: 720px;
+    }
+}
+@include mobile {
+    .container{
+        max-width: 374.5px;
+    }
+}

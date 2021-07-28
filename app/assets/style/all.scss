@@ -1,16 +1,12 @@
-@import "variable";
-@import "reset";
-@import "mixin";
-@import "base";
-// 頁首頁尾
-@import "layout";
-// 首頁
-@import "index";
-// 產品頁
-@import "product";
-// 門市據點
-@import "store";
-// 常見問題
-@import "faq";
-// 部落格
-@import "blog";
+@import "variable"; //變數
+@import "reset"; //CSS Reset
+@import "mixin"; //平板、手機尺寸
+@import "base"; //間距、字型大小
+// 頁面
+@import "layout";// 頁首頁尾
+@import "index";// 首頁
+@import "product";// 產品頁
+@import "store";// 門市據點
+@import "faq";// 常見問題
+@import "blog";// 部落格
+@import "blog_special";//部落格特別企劃單頁

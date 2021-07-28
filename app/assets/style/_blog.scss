@@ -1,0 +1,173 @@
+// menu
+.blog_menu{
+    background-color: $mainColorDark;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .blog_menu_item{
+        display: flex;
+    }
+    a{
+        color: #fff;
+        padding: 12px 0px;
+        &:hover{
+            transform:scale(1.2,1.2);
+        }
+    }
+    
+}
+// 主要內文
+.blog{
+    padding-top: 40px;
+    padding-bottom: 160px;
+    // 標題
+    .page_title{
+        margin-bottom: 60px;
+    }
+}
+// 部落格各卡片區塊設定
+.blog_content{
+    padding-bottom: 36px;
+    .blog_item{
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+        .blog_item_img{
+            width: 57%;
+            height: auto;
+            object-fit: cover;
+        }
+        .blog_item_content{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .blog_item_title{
+            font-size: 32px;
+            line-height: 1.5;
+            color: $mainColorDark;
+        }
+        .blog_item_English_title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .date{
+                color: rgba($color: #000000, $alpha: 0.7);
+            }
+        }
+        .blog_item_detail{
+            color: #555555;
+        }
+        .blog_item_more{
+            color: $mainColorDark;
+            text-align: right;
+            &:hover{
+                border-bottom: 1px solid $mainColorDark;
+            }
+        }
+    }
+    .blog_item_mobile{
+        display: none;
+    }
+}
+
+// 平板
+@include pad{
+    // menu
+    .blog_menu{
+        a{
+            padding: 16px 0px;
+        }   
+    }
+    // 主要內文
+    .blog{
+        padding-top: 32px;
+        padding-bottom: 96px;
+        // 標題
+        .page_title{
+            margin-bottom: 40px;
+        }
+    }
+    // 部落格各卡片區塊設定
+    .blog_content{
+        padding-bottom: 40px;
+        .blog_item_pc{
+            display: none;
+        }
+        .blog_item_mobile{
+            display: block;
+            a{
+                display: inline;
+                &:hover{
+                    color: $mainColorDark;
+                    border-bottom: 1px solid $mainColorDark;
+                }
+            }
+        }
+        .blog_item{
+            margin-bottom: 24px;
+            .blog_item_img{
+                width: 48%;
+            }
+            .blog_item_content{
+                width: 48%;
+            }
+            .blog_item_title{
+                font-size: 20px;
+            }
+            .blog_item_English_title{
+                font-size: 16px;
+                .date{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+// 手機
+@include mobile{
+    // menu
+    .blog_menu{
+        display: none;
+    }
+    // 主要內文
+    .blog{
+        padding-top: 28px;
+        padding-bottom: 56px;
+        // 標題
+        .page_title{
+            margin-bottom: 28px;
+        }
+    }
+    // 部落格各卡片區塊設定
+    .blog_content{
+        padding-bottom: 20px;
+        .blog_item{
+            margin-bottom: 20px;
+            flex-direction: column;
+            .blog_item_img{
+                width: 100%;
+                margin-bottom: 8px;
+            }
+            .blog_item_content{
+                width: 100%;
+            }
+            .blog_item_title{
+                font-size: 16px;
+            }
+            .blog_item_English_title{
+                margin-bottom: 0;
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+        .blog_item_mobile{
+            display: none;
+        }
+    }
+}

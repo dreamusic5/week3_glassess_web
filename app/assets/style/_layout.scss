@@ -10,7 +10,12 @@
     }
     .logo a{
         width: 80px;
-        height: auto;
+        height: 49px;
+        background-image: url(../images/logo.png);
+        display:block;//a標籤要改成區塊元素img才會完整出現
+	    text-indent: 101%; //首行縮排
+	    overflow:hidden;//超出區塊距離就隱藏
+	    white-space: nowrap;//不要斷行
     }
     .menu{
         display: flex;
@@ -18,6 +23,7 @@
             padding-left: 64px;
             a{
                 border-bottom: 1px solid transparent;
+                padding: 10px;
                 &:hover{
                     border-bottom: 1px solid #fff;
                 }
@@ -36,12 +42,12 @@
     }
 }
 .footer-content{
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     border-bottom: 1px solid #fff;
 }
 .footer-menu{
-    display: flex;
+    display: inline-flex;
     a{
         border-bottom: 1px solid transparent;
         &:hover{
@@ -51,7 +57,7 @@
 }
 .footer-contact{
     li a{
-        display: flex;
+        display: inline-flex;
         border-bottom: 1px solid transparent;
         &:hover{
             border-bottom: 1px solid #fff;
@@ -80,56 +86,52 @@
     }
 }
 
-@include pad {
-    .container{
-        max-width: 720px;
-    }
-    //表頭
-    .header{
-        padding: 30px 39px;
-        .menu{
-            li{
-                padding-left: 40px;
-            }
-        }
-    }
-    //表尾
-    .footer-contact{
-        p{
-            font-size: 20px;
-            line-height: 1.5;
-        }
-        li{
-            margin-bottom: 20px;
-            a img{
-                width: 20px;
-                height: auto;
-            }   
-        }
-        .phoneNumber{
-            margin-bottom: 12px;
-        }
-    }
-    .social-media{
-        li{
-            margin-right: 0;
-            margin-left: 24px;
-        }
-        img{
-            width: 24px;
-        }
-    }
-    .footer-menu{
-        margin-right: 40px;
-        margin-bottom: 18px;
-    }
-}
+// @include pad {
+//     .container{
+//         max-width: 720px;
+//     }
+//     //表頭
+//     .header{
+//         padding: 30px 39px;
+//         .menu{
+//             li{
+//                 padding-left: 40px;
+//             }
+//         }
+//     }
+//     //表尾
+//     .footer-contact{
+//         p{
+//             font-size: 20px;
+//         }
+//         li{
+//             margin-bottom: 20px;
+//             a img{
+//                 width: 20px;
+//                 height: auto;
+//             }   
+//         }
+//         .phoneNumber{
+//             margin-bottom: 12px;
+//         }
+//     }
+//     .social-media{
+//         li{
+//             margin-right: 0;
+//             margin-left: 24px;
+//         }
+//         img{
+//             width: 24px;
+//         }
+//     }
+//     .footer-menu{
+//         margin-right: 40px;
+//         margin-bottom: 18px;
+//     }
+// }
 
 //手機版本
-@include mobile {
-    .container{
-        max-width: 374.5px;
-    }
+@include pad {
     //表頭
     .header{
         padding: 0;
@@ -137,7 +139,8 @@
         .logo a{
             margin: 10px 0;
             width: 48px;
-            height: auto;
+            height: 30px;
+            background-size: cover;
         }
         .menu{
             flex-wrap: wrap;
@@ -159,13 +162,15 @@
         }
     }
     //表尾
+    .footer-content{
+        width: 100%;
+    }
     .footer-menu{
         display: none;
     }
     .footer-contact{
         p{
             font-size: 16px;
-            line-height: 1.5;
         }
         li{
             margin-bottom: 20px;
@@ -182,6 +187,7 @@
     .footer-subcontent{
         flex-direction: column;
         margin: 16px 0 0 0;
+        width: 100%;
     }
     .copyright{
         margin-bottom: 8px;
@@ -190,6 +196,11 @@
         flex-direction: column;
         li{
             margin-bottom: 8px;
+        }
+    }
+    .social-media{
+        li{
+            margin-left: 24px;
         }
     }
 }

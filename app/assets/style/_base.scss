@@ -16,74 +16,85 @@ a{
 }
 // 字體設定
 .fz-1{
-    font-size: 14px;
-	line-height: 1.5;
+    font-size: $spacer*0.875;
 }
 .fz-2{
-    font-size: 16px;
-	line-height: 1.5;
+    font-size: $spacer;
 }
 .fz-3{
-    font-size: 20px;
-	line-height: 1.5;
+    font-size: $spacer*1.25;
 }
 .fz-4{
-    font-size: 24px;
-	line-height: 1.5;
+    font-size: $spacer*1.5;
 }
 .fz-5{
-    font-size: 36px;
-	line-height: 1.5;
+    font-size: $spacer*2.25;
 }
 .fz-6{
-    font-size: 48px;
-	line-height: 1.5;
+    font-size: $spacer*3;
 }
 .fz-7{
-    font-size: 64px;
-	line-height: 1.5;
+    font-size: $spacer*4;
 }
 .fz-8{
-    font-size: 72px;
-	line-height: 1.5;
+    font-size: $spacer*4.5;
 }
 //間距設定
 .mb-1{
-	margin-bottom: 8px;
+	margin-bottom: $spacer*0.5;
 }
 .mb-2{
-	margin-bottom: 16px;
+	margin-bottom: $spacer;
 }
 .mb-3{
-	margin-bottom: 24px;
+	margin-bottom: $spacer*1.5;
 }
 .mb-4{
-	margin-bottom: 32px;
+	margin-bottom: $spacer*2;
 }
 .mb-5{
-	margin-bottom: 40px;
+	margin-bottom: $spacer*2.5;
 }
 .mb-6{
-	margin-bottom: 48px;
+	margin-bottom: $spacer*3;
 }
 
 .mr-1{
-	margin-right: 8px;
+	margin-right: $spacer*0.5;
 }
 .mr-2{
-	margin-right: 16px;
+	margin-right: $spacer;
 }
 .mr-3{
-	margin-right: 24px;
+	margin-right: $spacer*1.5;
 }
 .mr-4{
-	margin-right: 32px;
+	margin-right: $spacer*2;
 }
 .mr-5{
-	margin-right: 40px;
+	margin-right: $spacer*2.5;
 }
 .mr-6{
-	margin-right: 48px;
+	margin-right: $spacer*3;
+}
+
+.ml-1{
+	margin-left: $spacer*0.5;
+}
+.ml-2{
+	margin-left: $spacer;
+}
+.ml-3{
+	margin-left: $spacer*1.5;
+}
+.ml-4{
+	margin-left: $spacer*2;
+}
+.ml-5{
+	margin-left: $spacer*2.5;
+}
+.ml-6{
+	margin-left: $spacer*3;
 }
 
 //文字粗體
@@ -94,6 +105,7 @@ a{
 body{
     font-family: 'Noto Sans', Roboto, "Helvetica Neue", Arial, sans-serif;;
     margin: 0 auto;
+	line-height: 1.5;
 }
 
 

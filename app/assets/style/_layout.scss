@@ -14,8 +14,8 @@
         background-image: url(../images/logo.png);
         display:block;//a標籤要改成區塊元素img才會完整出現
 	    text-indent: 101%; //首行縮排
-	    overflow:hidden;//超出區塊距離就隱藏
-	    white-space: nowrap;//不要斷行
+        overflow:hidden;//超出區塊距離就隱藏
+        white-space: nowrap;//不要斷行
     }
     .menu{
         display: flex;
@@ -45,6 +45,7 @@
     display: inline-flex;
     justify-content: space-between;
     border-bottom: 1px solid #fff;
+    width: 100%;
 }
 .footer-menu{
     display: inline-flex;

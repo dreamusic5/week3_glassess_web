@@ -17,6 +17,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- AOS動畫 -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!-- 自己的CSS -->
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -24,7 +28,7 @@
 <body>
   <header class="header">
     <h1 class="logo">
-      <a href="index.html">
+      <a href="index.html" class="animate__animated animate__shakeX">
         glasses
       </a>
     </h1>
@@ -38,7 +42,7 @@
 
   
 <div class="store container">
-    <h1 class="page_title fz-6 font-bold">門市據點</h1>
+    <h1 class="page_title fz-6 font-bold" data-aos="fade-up">門市據點</h1>
     <!-- 地區下拉選單 -->
     <div class="select_place">
         <p class="fz-4 mr-3">選擇地區</p>
@@ -51,7 +55,7 @@
     </div>
     <!-- 店家資訊 -->
     <ul class="store_item">
-        <li class="mb-4">
+        <li class="mb-4" data-aos="flip-left">
             <img src="./assets/images/locate1.jpeg" alt="store1" class="store_img">
             <h2 class="store_name fz-4 font-bold">台北中山旗艦店</h2>
             <ul class="store_content">
@@ -72,7 +76,7 @@
                 <a href="store_taipei_ZhongShang.html">詳細資訊</a>
             </div>
         </li>
-        <li class="mb-4">
+        <li class="mb-4" data-aos="flip-left">
             <img src="./assets/images/locate2.jpg" alt="store2" class="store_img">
             <h2 class="store_name fz-4 font-bold">台北中山旗艦店</h2>
             <ul class="store_content">
@@ -93,7 +97,7 @@
                 <a href="store_taipei_ZhongShang.html">詳細資訊</a>
             </div>
         </li>
-        <li class="mb-4">
+        <li class="mb-4" data-aos="flip-left">
             <img src="./assets/images/locate3.jpg" alt="store3" class="store_img">
             <h2 class="store_name fz-4 font-bold">台北中山旗艦店</h2>
             <ul class="store_content">
@@ -114,7 +118,7 @@
                 <a href="store_taipei_ZhongShang.html">詳細資訊</a>
             </div>
         </li>
-        <li class="mb-4">
+        <li class="mb-4" data-aos="flip-left">
             <img src="./assets/images/locate4.jpg" alt="store4" class="store_img">
             <h2 class="store_name fz-4 font-bold">台北中山旗艦店</h2>
             <ul class="store_content">
@@ -135,7 +139,7 @@
                 <a href="store_taipei_ZhongShang.html">詳細資訊</a>
             </div>
         </li>
-        <li class="mb-4">
+        <li class="mb-4" data-aos="flip-left">
             <img src="./assets/images/locate5.jpg" alt="store5" class="store_img">
             <h2 class="store_name fz-4 font-bold">台北中山旗艦店</h2>
             <ul class="store_content">
@@ -175,13 +179,13 @@
             <li><a href="faq.html">常見問題</a></li>
           </ul>
           <ul class="footer-contact">
-            <li class="mb-2 phoneNumber">
+            <li class="mb-2 phoneNumber" data-aos="zoom-out-up">
               <a href="tel:+886-800-000-000">
                 <img src="./assets/images/icon-phone.svg" alt="" class="mr-2">
                 <p class="fz-5">0800-000-000</p>
               </a>
             </li>
-            <li class="mb-2">
+            <li class="mb-2" data-aos="zoom-out-up">
               <a href="mailto:glasses@business.com">
                 <img src="./assets/images/icon-mail.svg" alt="" class="mr-2">
                 <p class="fz-5">glasses@business.com</p>
@@ -204,8 +208,15 @@
       </div>
     </div>
   </footer>
+
+  <!-- 自己的JS -->
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
+  <!-- AOS動畫 -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

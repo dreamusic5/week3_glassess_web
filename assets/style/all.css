@@ -330,6 +330,7 @@ a {
   background-image: url(../images/banner.png);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,6 +423,7 @@ a {
   background-image: url(../images/bg.png);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   padding-bottom: 80px; }
   .co-brand .content {
     display: -webkit-box;

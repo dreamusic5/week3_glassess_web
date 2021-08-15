@@ -17,6 +17,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- AOS動畫 -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!-- 自己的CSS -->
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -24,7 +28,7 @@
 <body>
   <header class="header">
     <h1 class="logo">
-      <a href="index.html">
+      <a href="index.html" class="animate__animated animate__shakeX">
         glasses
       </a>
     </h1>
@@ -67,12 +71,12 @@
 </div>
 <!-- 產品列 -->
 <div class="container product">
-    <h1 class="product_title mb-5">
+    <h1 class="product_title mb-5" data-aos="zoom-in">
         Celluloid Combi<br>
         <span>賽璐珞鈦金屬混合鏡框<span>
     </h1>
     <ul class="product_item">
-        <li class="product_item_card">
+        <li class="product_item_card" data-aos="fade-up">
             <a href="#">
                 <img src="./assets/images/products-1.png" alt="產品1">
                 <div>
@@ -87,7 +91,7 @@
                 </div>
             </a>
         </li>
-        <li class="product_item_card">
+        <li class="product_item_card" data-aos="fade-up">
             <a href="#">
                 <img src="./assets/images/products-2.png" alt="產品2">
                 <div>
@@ -102,7 +106,7 @@
                 </div>
             </a>
         </li>
-        <li class="product_item_card">
+        <li class="product_item_card" data-aos="fade-up">
             <a href="#">
                 <img src="./assets/images/products-3.png" alt="產品3">
                 <div>
@@ -117,7 +121,7 @@
                 </div>
             </a>
         </li>
-        <li class="product_item_card mobile_display_none">
+        <li class="product_item_card mobile_display_none" data-aos="fade-up">
             <a href="#">
                 <img src="./assets/images/products-4.png" alt="產品4">
                 <div>
@@ -132,7 +136,7 @@
                 </div>
             </a>
         </li>
-        <li class="product_item_card mobile_display_none">
+        <li class="product_item_card mobile_display_none" data-aos="fade-up">
             <a href="#">
                 <img src="./assets/images/products-5.jpg" alt="產品5">
                 <div>
@@ -147,7 +151,7 @@
                 </div>
             </a>
         </li>
-        <li class="product_item_card mobile_display_none">
+        <li class="product_item_card mobile_display_none" data-aos="fade-up">
             <a href="#">
                 <img src="./assets/images/products-6.jpg" alt="產品6">
                 <div>
@@ -162,7 +166,7 @@
                 </div>
             </a>
         </li>
-        <li class="product_item_card mobile_display_none">
+        <li class="product_item_card mobile_display_none" data-aos="fade-up">
             <a href="#">
                 <img src="./assets/images/products-7.jpg" alt="產品7">
                 <div>
@@ -177,7 +181,7 @@
                 </div>
             </a>
         </li>
-        <li class="product_item_card mobile_display_none">
+        <li class="product_item_card mobile_display_none" data-aos="fade-up">
             <a href="#">
                 <img src="./assets/images/products-8.jpg" alt="產品8">
                 <div>
@@ -192,7 +196,7 @@
                 </div>
             </a>
         </li>
-        <li class="product_item_card mobile_display_none">
+        <li class="product_item_card mobile_display_none" data-aos="fade-up">
             <a href="#">
                 <img src="./assets/images/products-9.jpg" alt="產品9">
                 <div>
@@ -207,7 +211,7 @@
                 </div>
             </a>
         </li>
-        <li class="product_item_card mobile_display_none">
+        <li class="product_item_card mobile_display_none" data-aos="fade-up">
             <a href="#">
                 <img src="./assets/images/products-10.jpg" alt="產品10">
                 <div>
@@ -222,7 +226,7 @@
                 </div>
             </a>
         </li>
-        <li class="product_item_card pad_display_none">
+        <li class="product_item_card pad_display_none" data-aos="fade-up">
             <a href="#">
                 <img src="./assets/images/products-11.jpg" alt="產品11">
                 <div>
@@ -237,7 +241,7 @@
                 </div>
             </a>
         </li>
-        <li class="product_item_card pad_display_none">
+        <li class="product_item_card pad_display_none" data-aos="fade-up">
             <a href="#">
                 <img src="./assets/images/products-12.jpg" alt="產品12">
                 <div>
@@ -277,13 +281,13 @@
             <li><a href="faq.html">常見問題</a></li>
           </ul>
           <ul class="footer-contact">
-            <li class="mb-2 phoneNumber">
+            <li class="mb-2 phoneNumber" data-aos="zoom-out-up">
               <a href="tel:+886-800-000-000">
                 <img src="./assets/images/icon-phone.svg" alt="" class="mr-2">
                 <p class="fz-5">0800-000-000</p>
               </a>
             </li>
-            <li class="mb-2">
+            <li class="mb-2" data-aos="zoom-out-up">
               <a href="mailto:glasses@business.com">
                 <img src="./assets/images/icon-mail.svg" alt="" class="mr-2">
                 <p class="fz-5">glasses@business.com</p>
@@ -306,8 +310,15 @@
       </div>
     </div>
   </footer>
+
+  <!-- 自己的JS -->
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
+  <!-- AOS動畫 -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

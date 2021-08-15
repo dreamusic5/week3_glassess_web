@@ -17,6 +17,7 @@
     background-image: url(../images/banner.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -93,6 +94,7 @@
     background-image: url(../images/bg.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     padding-bottom: 80px;
     .content{
         display: flex;
